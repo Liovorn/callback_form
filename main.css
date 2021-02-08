@@ -1,0 +1,117 @@
+.callback{
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #9ac766;
+  background: -moz-linear-gradient(top, #9ac766 0%, #6bb13c 50%, #5aac3b 51%, #49a33a 100%);
+  background: -webkit-linear-gradient(top, #9ac766 0%,#6bb13c 50%,#5aac3b 51%,#49a33a 100%);
+  background: linear-gradient(to bottom, #9ac766 0%,#6bb13c 50%,#5aac3b 51%,#49a33a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ac766', endColorstr='#49a33a',GradientType=0 );
+  border: 1px solid #418c31;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.popup-container{
+  z-index:10;
+  display:none;
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background: rgba(0,0,0,.4);
+}
+.popup-form{
+  z-index:100;
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top:100px;
+  left: 0;
+  right: 0;
+  width: 500px;
+  background: #fff;
+}
+.popup-container .popup-header{
+  background: #eee;
+  padding: 30px;
+  position: relative;
+}
+.popup-container .popup-close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #af3b3b;
+}
+.popup-container .popup-header-title{
+  margin-top: 0;
+}
+.popup-container .popup-close:hover{
+  cursor: pointer;
+}
+.popup-container .popup-form label span{
+  color: #e02222;
+}
+.popup-container .popup-form label{
+  display:inline-block;
+  margin-bottom: 5px;
+}
+.popup-container .popup-inputs{
+  padding: 30px;
+}
+.popup-container .popup-input{
+  margin-bottom: 15px;
+}
+.popup-container .popup-input input{
+  padding: 5px 0 5px 5px;
+}
+.popup-container .popup-input input, .catalog-popup-container .popup-input textarea{
+  padding: 5px 0 5px 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.popup-container .popup-input input[type="checkbox"]{
+  width: inherit;
+}
+.popup-container .popup-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.popup-container .popup-required{
+  margin: 0;
+}
+.popup-container .popup-form-submit{
+  background: #0a8992;
+  color: #fff;
+  border:0;
+  padding: 10px;
+  transition: all .2s ease-in-out;
+  
+}
+.popup-container .popup-form-submit:hover{
+  cursor: pointer;
+  background: #09767d;
+}
+
+.popup-container .disabled{
+  background: #ddd;
+  color: #aaa;
+}
+
+.popup-container .disabled:hover{
+  background: #ddd;
+  color: #aaa;
+  cursor: default;
+}
+.popup-container #product{
+  font-size: 20px;
+  font-weight: 700;
+  color: #777;
+  padding: 5px 15px;
+  background: #ddd;
+}
